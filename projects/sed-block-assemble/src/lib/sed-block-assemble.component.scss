@@ -1,0 +1,23 @@
+.sed-block-assemble {
+  display : inline-block;
+  position : relative;
+
+  &__component-wrapper {
+    position : relative;
+  }
+
+  &__anim {
+    position : absolute;
+    top : 0;
+  }
+
+  &__image-slice-wrapper {
+    position : absolute;
+    display : inline-block;
+    overflow : hidden;
+  }
+
+  &__image-slice {
+    position: relative;
+  }
+}

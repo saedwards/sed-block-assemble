@@ -1,0 +1,23 @@
+<div class="sed-block-assemble" sedBlockAssemble="">
+  <div class="sed-block-assemble__component-wrapper"
+       [style.left]="show ? '' : '-999999px'">
+    <div #sedblockassemblecomponent class="sed-block-assemble__component">
+      <ng-content></ng-content>
+    </div>
+  </div>
+  <div *ngIf="imagesMeta.length && !show" class="sed-block-assemble__anim"
+       [@sedBlockAssembleAnimation]
+       (@sedBlockAssembleAnimation.done)="blockAssembleAnimationFinished();">
+        <span class="sed-block-assemble__image-slice-wrapper" data-sed-block-assemble-image-slice
+              *ngFor="let imageMeta of imagesMeta"
+              [style.width]="imageMeta.width + 'px'"
+              [style.height]="imageMeta.height + 'px'"
+              [style.left]="imageMeta.x + 'px'"
+              [style.top]="imageMeta.y + 'px'">
+          <img class="sed-block-assemble__image-slice"
+               [src]="this.dataUrl"
+               [style.left]="imageMeta.imageOffsetX + 'px'"
+               [style.top]="imageMeta.imageOffsetY + 'px'"/>
+        </span>
+  </div>
+</div>

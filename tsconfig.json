@@ -6,5 +6,12 @@
 */
 {
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./projects/sed-block-assemble/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/sed-block-assemble/tsconfig.spec.json"
+    }
+]
 }
