@@ -1,24 +1,40 @@
 # SedBlockAssemble
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.14.
+An engaging animation to enhance your Angular components.
 
-## Code scaffolding
+## Usage
+Import the `sed-block-assemble` module into your application or feature module 
+after any common modules, libraries or frameworks
 
-Run `ng generate component component-name --project sed-block-assemble` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project sed-block-assemble`.
-> Note: Don't forget to add `--project sed-block-assemble` or else it will be added to the default project in your `angular.json` file. 
+```js
+import { SedBlockAssembleModule } from '@sedware/block-assemble';
 
-## Build
+@NgModule({
+  ...
+  imports: [
+    ...
+    SedBlockAssembleModule
+  ],
+  ...
+})
+export class AppModule { }
+```
 
-Run `ng build sed-block-assemble` to build the project. The build artifacts will be stored in the `dist/` directory.
+Use the block assemble animation in your components
 
-## Publishing
+```html
+<sed-block-assemble>
+    Your content/components go here...
+</sed-block-assemble>
+```
 
-After building your library with `ng build sed-block-assemble`, go to the dist folder `cd dist/sed-block-assemble` and run `npm publish`.
+#### Summary
+Aside from the typcial Angular dependencies, this component utilises 
+the [dom-to-image](https://github.com/tsayen/dom-to-image) plugin to increase 
+animation performance.
 
-## Running unit tests
-
-Run `ng test sed-block-assemble` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+If you have any issues or would like to contribute, please raise a 
+[Github issue](https://github.com/saedwards/sed-block-assemble/issues) or a pull 
+request with new changes. If you think the component doesn't quite fit your 
+needs and could be improved, you're very welcome to start a discussion about 
+new feature requests/changes by raising an issue.

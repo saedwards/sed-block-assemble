@@ -1,6 +1,26 @@
 {
   "name": "sed-block-assemble",
   "version": "0.0.1",
+  "author": "Shane Edwards (https://sedware.com)",
+  "homepage": "https://sedware.com/block-assemble.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saedwards/sed-block-assemble.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saedwards/sed-block-assemble/issues"
+  },
+  "keywords": [
+    "angular",
+    "animation",
+    "block-stack",
+    "block-assemble",
+    "sedware",
+    "javascript",
+    "typescript",
+    "component"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
     "@angular/core": "^10.0.14"

@@ -1,4 +1,18 @@
 # SedBlockAssemble
+Use this component to enhance your Angular applications and make them more 
+engaging. Aside from the typcial Angular dependencies, this component utilises 
+the [dom-to-image](https://github.com/tsayen/dom-to-image) plugin to increase 
+animation performance.
+
+Wrap your components with the `sed-block-assemble` selector and the animation 
+will assemble any of your components by stacking up blocks as soon as your 
+component loads.
+
+If you have any issues or would like to contribute, please raise a 
+[Github issue](https://github.com/saedwards/sed-block-assemble/issues) or a pull 
+request with new changes. If you think the component doesn't quite fit your 
+needs and could be improved, you're very welcome to start a discussion about 
+new feature requests/changes by raising an issue.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
